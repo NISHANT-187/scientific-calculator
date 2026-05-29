@@ -1,3 +1,4 @@
+Deployment link :- https://scientific-calculator-six-nu.vercel.app/
 # Scientific Calculator
 
 A modern scientific calculator built with HTML, CSS, and JavaScript. It keeps the same glass-style aesthetic as the normal calculator while adding advanced scientific functions, animated interactions, keyboard support, and click sounds.
