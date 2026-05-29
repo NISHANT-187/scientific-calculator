@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="scene">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="ambient ambient-three"></div>
+
+    <section class="calculator" aria-label="Scientific calculator">
+      <div class="topbar">
+        <div>
+          <p class="eyebrow">Glass Scientific</p>
+          <h1>Scientific Calculator</h1>
+        </div>
+
+        <div class="controls" aria-label="Calculator controls">
+          <button class="mode-toggle" id="angleMode" type="button" aria-label="Toggle degree and radian mode">DEG</button>
+          <button class="sound-toggle is-on" id="soundToggle" type="button" aria-label="Toggle click sound" aria-pressed="true">
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="display" aria-live="polite">
+        <div class="history" id="history"></div>
+        <div class="result" id="result">0</div>
+      </div>
+
+      <div class="keys">
+        <button class="key utility" type="button" data-action="clear">AC</button>
+        <button class="key utility" type="button" data-action="delete">DEL</button>
+        <button class="key utility" type="button" data-value="(">(</button>
+        <button class="key utility" type="button" data-value=")">)</button>
+        <button class="key operator" type="button" data-value="/">/</button>
+
+        <button class="key science" type="button" data-value="sin(">sin</button>
+        <button class="key science" type="button" data-value="cos(">cos</button>
+        <button class="key science" type="button" data-value="tan(">tan</button>
+        <button class="key science" type="button" data-value="^">x<sup>y</sup></button>
+        <button class="key operator" type="button" data-value="*">x</button>
+
+        <button class="key science" type="button" data-value="asin(">asin</button>
+        <button class="key science" type="button" data-value="acos(">acos</button>
+        <button class="key science" type="button" data-value="atan(">atan</button>
+        <button class="key science" type="button" data-value="sqrt(">sqrt</button>
+        <button class="key operator" type="button" data-value="-">-</button>
+
+        <button class="key science" type="button" data-value="log(">log</button>
+        <button class="key science" type="button" data-value="ln(">ln</button>
+        <button class="key science" type="button" data-value="exp(">exp</button>
+        <button class="key science" type="button" data-value="!">x!</button>
+        <button class="key operator" type="button" data-value="+">+</button>
+
+        <button class="key" type="button" data-value="7">7</button>
+        <button class="key" type="button" data-value="8">8</button>
+        <button class="key" type="button" data-value="9">9</button>
+        <button class="key science" type="button" data-value="pi">pi</button>
+        <button class="key science" type="button" data-value="e">e</button>
+
+        <button class="key" type="button" data-value="4">4</button>
+        <button class="key" type="button" data-value="5">5</button>
+        <button class="key" type="button" data-value="6">6</button>
+        <button class="key science" type="button" data-value="%">%</button>
+        <button class="key science" type="button" data-value="mod">mod</button>
+
+        <button class="key" type="button" data-value="1">1</button>
+        <button class="key" type="button" data-value="2">2</button>
+        <button class="key" type="button" data-value="3">3</button>
+        <button class="key science" type="button" data-value="Ans">Ans</button>
+        <button class="key equals tall" type="button" data-action="calculate">=</button>
+
+        <button class="key zero" type="button" data-value="0">0</button>
+        <button class="key" type="button" data-value=".">.</button>
+        <button class="key utility" type="button" data-action="negate">+/-</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
